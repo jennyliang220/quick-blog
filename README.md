@@ -54,7 +54,7 @@
             Talk title: ${title}
 
 
-            Talk abstract: ${abstract}
+Talk abstract: ${abstract}
 
 
             Best regards,\n${name}`;
