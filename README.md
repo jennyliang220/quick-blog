@@ -39,30 +39,21 @@
             const abstract = document.querySelector('#talk-abstract').value;
 
             const subject = `[workshop proposal] ${title}`;
-            const body = `Hi Program Committee,
+            const body = `
+Hi Program Committee,
 
+I would like to submit a talk proposal for the W3C Smart Cities Workshop.
 
-            I would like to submit a talk proposal for the W3C Smart Cities Workshop.
+Name: ${name}
 
+Bio: ${bio}
 
-            Name: ${name}
-
-
-            Bio: ${bio}
-
-
-            Talk title: ${title}
-
+Talk title: ${title}
 
 Talk abstract: ${abstract}
 
-
-            Best regards,\n${name}`;
-
-            window.location.href =
-                'mailto:team-beihang-events@w3.org' +
-                '?subject=' + encodeURIComponent(subject) +
-                '&body=' + encodeURIComponent(body);
+Best regards,\n${name}`;
+          window.open(`mailto:team-beihang-events@w3.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
         };
     }
 })();
