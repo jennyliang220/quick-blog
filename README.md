@@ -1,7 +1,7 @@
 # 这是一个大标题
 
 ## WEB ACCESSIBILITY COMMUNITY GROUP
-<section class="box" id="submit-form">
+<form class="box" id="submit-form">
   <h2 class="footnote">
     Submit a talk proposal {{title}}
   </h2>
@@ -24,7 +24,7 @@
   <button id="submit-button">Submit</button>
   <br>
   <small>(Submit opens a prepopulated mail compose window. You may customize your submission at this point before sending it.)</small>
-</section>
+</form>
 <script>
   (() => {
     const button = document.querySelector('#submit-button');
