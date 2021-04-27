@@ -3,7 +3,7 @@
 ## WEB ACCESSIBILITY COMMUNITY GROUP
 <section class="box" id="submit-form">
   <h2 class="footnote">
-    Submit a talk proposal
+    Submit a talk proposal {{title}}
   </h2>
   <label for="speaker-name">Your name:</label>
   <input id="speaker-name" placeholder="Your name" maxlength="64">
@@ -39,10 +39,10 @@
             const abstract = document.querySelector('#talk-abstract').value;
 
             const subject = `[workshop proposal] ${title}`;
-            const body = `
-Hi Program Committee,
+            const body = `Hi Program Committee,
 
-I would like to submit a talk proposal for the W3C Smart Cities Workshop.
+I would like to submit a talk proposal for the W3C Beihang Event.
+
 
 Name: ${name}
 
@@ -51,6 +51,7 @@ Bio: ${bio}
 Talk title: ${title}
 
 Talk abstract: ${abstract}
+
 
 Best regards,\n${name}`;
           window.open(`mailto:team-beihang-events@w3.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
