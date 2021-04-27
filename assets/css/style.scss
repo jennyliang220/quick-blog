@@ -15,12 +15,14 @@ body {
     padding: 5px;
     min-width: 100px;
     display: inline-block;
-    vertical-align: top;
 }
 #submit-form input,
 #submit-form textarea {
     display: inline-block;
     min-width: 200px;
+    margin: 5px 0;
+    padding: 5px;
+    vertical-align: text-top;
 }
 #submit-form #submit-button {
     padding: 5px;
