@@ -39,19 +39,25 @@
             const abstract = document.querySelector('#talk-abstract').value;
 
             const subject = `[workshop proposal] ${title}`;
-            const body = `Hi Program Committee,` +
-            `\n\n` +
-            `I would like to submit a talk proposal for the W3C Smart Cities Workshop.` +
-            `\n\n` +
-            `Name: ${name}` +
-            `\n\n` +
-            `Bio: ${bio}` +
-            `\n\n` +
-            `Talk title: ${title}` +
-            `\n\n` +
-            `Talk abstract: ${abstract}`+
-            `\n\n` +
-            `Best regards,\n${name}`;
+            const body = `Hi Program Committee,
+
+
+            I would like to submit a talk proposal for the W3C Smart Cities Workshop.
+
+
+            Name: ${name}
+
+
+            Bio: ${bio}
+
+
+            Talk title: ${title}
+
+
+            Talk abstract: ${abstract}
+
+
+            Best regards,\n${name}`;
 
             window.location.href =
                 'mailto:team-beihang-events@w3.org' +
