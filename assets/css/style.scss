@@ -11,10 +11,11 @@ body {
     padding: 20px;
 }
 #submit-form label{
-    margin: 5px 0;
+    margin: 5px 5px 5px 0;
     padding: 5px;
     min-width: 100px;
     display: inline-block;
+    vertical-align: top;
 }
 #submit-form input,
 #submit-form textarea {
