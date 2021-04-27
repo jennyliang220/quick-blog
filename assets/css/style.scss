@@ -6,3 +6,26 @@
 body {
     color: #000;
 }
+#submit-form {
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    text-align: center;
+}
+#submit-form input{
+    margin: 5px 0;
+    padding: 5px;
+    min-width: 100px;
+}
+#submit-form label,
+#submit-form textarea {
+    min-width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 200px;
+    text-align: right;
+}
+#submit-form #submit-button {
+    padding: 5px;
+    min-width: 100px;
+    margin: 5px;
+}
