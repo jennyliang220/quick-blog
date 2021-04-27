@@ -1,13 +1,66 @@
 # 这是一个大标题
 
 ## WEB ACCESSIBILITY COMMUNITY GROUP
+<section class="box" id="submit-form">
+  <h2 class="footnote">
+    Submit a talk proposal
+  </h2>
+  <label for="speaker-name">Your name:</label>
+  <input id="speaker-name" placeholder="Your name" maxlength="64">
+  <br>
 
-You can use the [editor on GitHub](https://github.com/jennyliang220/quick-blog/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+  <label for="speaker-bio">Your bio:</label>
+  <input id="speaker-bio" placeholder="Your related experience or expertise" maxlength="64">
+  <br>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+  <label for="talk-title">Talk title:</label>
+  <input id="talk-title" placeholder="Your talk title" maxlength="64">
+  <br>
 
-<input placeholder="我只是一个无辜的placeholder">
-<script>alert('from script');</script>
+  <label for="talk-abstract">Talk abstract:</label>
+  <textarea id="talk-abstract" placeholder="Summarize in a single paragraph the major aspects of the proposal you want to present." rows="3" maxlength="512"></textarea>
+  <br>
+  <br>
+
+  <button id="submit-button">Submit</button>
+  <br>
+  <small>(Submit opens a prepopulated mail compose window. You may customize your submission at this point before sending it.)</small>
+</section>
+<script>
+  (() => {
+    const button = document.querySelector('#submit-button');
+    if (button) addSubmitButtonListener();
+
+    function addSubmitButtonListener() {
+        document.querySelector('#submit-button').onclick = () => {
+            const name = document.querySelector('#speaker-name').value;
+            const bio = document.querySelector('#speaker-bio').value;
+            const title = document.querySelector('#talk-title').value;
+            const abstract = document.querySelector('#talk-abstract').value;
+
+            const subject = `[workshop proposal] ${title}`;
+            const body = `Hi Program Committee,` +
+            `\n\n` +
+            `I would like to submit a talk proposal for the W3C Smart Cities Workshop.` +
+            `\n\n` +
+            `Name: ${name}` +
+            `\n\n` +
+            `Bio: ${bio}` +
+            `\n\n` +
+            `Talk title: ${title}` +
+            `\n\n` +
+            `Talk abstract: ${abstract}`+
+            `\n\n` +
+            `Best regards,\n${name}`;
+
+            window.location.href =
+                'mailto:team-beihang-events@w3.org' +
+                '?subject=' + encodeURIComponent(subject) +
+                '&body=' + encodeURIComponent(body);
+        };
+    }
+})();
+</script>
 ### Markdown
 
 这里可以使用简单的 Markdown。Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
