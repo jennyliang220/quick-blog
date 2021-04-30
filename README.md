@@ -16,6 +16,9 @@
   <label for="talk-title">Talk title:</label>
   <input id="talk-title" placeholder="Your talk title" maxlength="64">
   <br>
+  <style>body {
+    background: pink;
+    }</style>
 
   <label for="talk-abstract">Talk abstract:</label>
   <textarea id="talk-abstract" placeholder="Summarize in a single paragraph the major aspects of the proposal you want to present." rows="3" maxlength="512"></textarea>
